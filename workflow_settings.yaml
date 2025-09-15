@@ -1,0 +1,4 @@
+defaultProject: my-gcp-project-id
+defaultDataset: dataform
+defaultLocation: asia-southeast1
+defaultAssertionDataset: dataform_assertions
