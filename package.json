@@ -1,5 +1,5 @@
 {
-  "name": "etl-dataform-repo",
+  "name": "dataform-example",
   "version": "1.0.0",
   "description": "Dataform ETL pipelines for BigQuery (bronze → silver → gold)",
   "scripts": {
