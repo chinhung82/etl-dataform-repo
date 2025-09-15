@@ -8,7 +8,7 @@
     "test": "dataform test"
   },
   "dependencies": {
-    "@dataform/core": "^2.5.2"
+    "@dataform/core": "3.0.0"
   },
   "devDependencies": {}
 }
