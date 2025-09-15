@@ -1,4 +1,4 @@
-defaultProject: my-gcp-project-id
-defaultDataset: dataform
+defaultProject: western-card-471813-b5
+defaultDataset: ds1
 defaultLocation: asia-southeast1
 defaultAssertionDataset: dataform_assertions
