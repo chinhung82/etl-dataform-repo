@@ -1,13 +1,14 @@
 {
-  "name": "dataform-example",
+  "name": "etl-dataform-repo",
   "version": "1.0.0",
+  "description": "Dataform ETL pipelines for BigQuery (bronze → silver → gold)",
   "scripts": {
-    "compile": "dataform compile",
+    "build": "dataform compile",
     "run": "dataform run",
     "test": "dataform test"
   },
-  "devDependencies": {
-    "@dataform/cli": "^1.19.0",
-    "@dataform/core": "^2.9.0"
-  }
+  "dependencies": {
+    "@dataform/core": "^2.5.2"
+  },
+  "devDependencies": {}
 }
