@@ -7,7 +7,7 @@ SELECT
   date,
   store_id,
   product_id,
-  category,
+  product_category,
   quantity,
   unit_price,
   quantity * unit_price AS total_amount
