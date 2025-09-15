@@ -1,0 +1,12 @@
+config {
+  type: "table",
+  schema: "ds1"
+}
+
+SELECT
+  store_id,
+  SUM(total_amount) AS total_amount
+FROM
+  ${ref("sales_silver")}
+GROUP BY
+  store_id

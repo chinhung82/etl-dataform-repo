@@ -1,0 +1,7 @@
+{
+  "warehouse": "bigquery",
+  "defaultSchema": "ds1",
+  "gcloudProjectId": "western-card-471813-b5",
+  "defaultLocation": "asia-southeast1", 
+  "name": "dataform-example"
+}

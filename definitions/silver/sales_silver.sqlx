@@ -1,0 +1,17 @@
+config {
+  type: "table",
+  schema: "ds1"
+}
+
+SELECT
+  date,
+  store_id,
+  product_id,
+  category,
+  quantity,
+  unit_price,
+  quantity * unit_price AS total_amount
+FROM
+  ${ref("ds1", "sales_bronze")}
+WHERE quantity > 0
+  
