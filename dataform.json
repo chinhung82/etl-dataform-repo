@@ -2,6 +2,6 @@
   "warehouse": "bigquery",
   "defaultSchema": "ds1",
   "projectId": "western-card-471813-b5",
-  "location": "asia-southeast1"
+  "location": "asia-southeast1",
   "name": "dataform-example"
 }
