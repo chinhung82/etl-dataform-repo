@@ -4,9 +4,7 @@ config {
 }
 
 SELECT
-  store_id,
-  SUM(total_amount) AS total_amount
+  *, 
+  case when transaction_amt > 10000 then 'high risk' else 'normal' end as transaction_flag
 FROM
   ${ref("sales_silver")}
-GROUP BY
-  store_id

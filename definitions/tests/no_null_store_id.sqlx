@@ -1,4 +1,4 @@
 config { type: "assertion" }
 
 SELECT * FROM ${ref("sales_silver")}
-WHERE store_id IS NULL
+WHERE transaction_id IS NULL

@@ -1,7 +1,5 @@
-config {
-  type: "table",
-  schema: "ds1"
-}
+config { type: "assertion" }
+
 
 WITH ranked AS (
   SELECT
@@ -10,7 +8,7 @@ WITH ranked AS (
       PARTITION BY transaction_id, date, product_category, CAST(quantity AS STRING), CAST(unit_price AS STRING), CAST(transaction_amt AS STRING)
       ORDER BY date
     ) AS row_num
-  FROM ${ref("sales_bronze")}
+  FROM ${ref("sales_gold")}
 )
 SELECT
   date,
@@ -20,6 +18,5 @@ SELECT
   unit_price,
   transaction_amt
 FROM ranked
-WHERE row_num = 1
+WHERE row_num > 1
 
-  
